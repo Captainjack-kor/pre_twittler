@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>twittler</title>
+  <meta name="viewport” content=“width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/dayjs.min.js"
+      integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/plugin/relativeTime.min.js"
+      integrity="sha512-BQqXM2ye6+98YyRQzE676pY2Bc4d3o/fBNlBQyKv2J9oKwp9K/4BVqFWIJBx1zKlAJ8M0PIJR5Yp51FsnSUynQ=="
+      crossorigin="anonymous"
+    ></script>
+  <script>
+    dayjs.extend(window.dayjs_plugin_relativeTime);
+  </script>
+  <script src="data.js"></script>
+  <title>Twittler in JS</title>
+</head>
+<body>
+  <!-- 여기에 HTML 구조를 작성하세요. 아래 코드는 예제이며, 얼마든지 바꿀 수 있습니다 -->
+  <div id="root">
+    <header>
+      <h1>twittler</h1>
+      <p>
+        Welcome! Twittler users!
+      </p>
+    </header>
+  <section class="form white">
+    <div>
+      <div class="form_wrapper">
+        <span class="form__label">Username</span>
+        <input id="usernameInput" class="form__input" type="text" />
+      </div>
+      <div class="form__wrapper">
+        <span class="form__label">Message</span>
+        <input id="messageInput" class="form__input" type="text" />
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <button id="tweetButton">
+          <b>Tweet!</b>
+        </button>
+        <button id="randomButton">
+          <b>Check Tweets!</b>
+        </button>
+        <button id="goBackButton">
+          <b>Go Back!</b>
+        </button>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="tweetlist" class="white"></section>
+  </main>
+  <!---
+  <div id="greeting">Twittler</div>
+  <div id="test"></div>
+  <div id="container">
+    <div id="box1">
+      <div id="info">
+        <div id="username">
+          <div id="username_title">Username</div>
+          <input type="text" id="username_txt" />
+        </div>
+        <div id="message">
+          <div id="message_title">Message</div>
+          <input type="text" id="message_txt" />
+        </div>
+      </div>
+      <button id="tweet_btn">Tweet!</button>
+    </div>
+    <div id="box2">
+      <div id="header">
+        <button id="efresh">Check new Tweets</button>
+      </div>
+      <div id="tweet">
+        <div class="tweetname">
+         <div class="name_date">
+            <a href="#" class="name">ingikim</a>
+            <span class="date">2019-01-04 18:30:20</span>
+          </div>
+          <div class="content">education for real world</div>
+        </div>
+        <div class="tweetname">
+          <div class="name_date">
+            <a href="#" class="name">stevejobs</a>
+            <span class="date">2015-01-03 12:30:20</span>
+          </div>
+          <span class="content">Stay hungry, and stay foolish</span>
+        </div>
+        <div class="tweetname">
+          <div class="name_date">
+            <a href="#" class="name">ingikim</a>
+            <span class="date">2019-01-05 07:30:20</span>
+          </div>
+          <span class="content">code now! #work #hard</span>
+        </div>
+        <div class="tweetname">
+          <div class="name_date">
+            <a href="#" class="name">johnnykoo</a>
+            <span class="date">2019-01-04 18:30:20</span>
+          </div>
+          <span class="content">this is test message #pair #programming</span>
+        </div>
+        <div class="tweetname">
+          <div class="name_date">
+            <a href="#" class="name">ingikim</a>
+            <span class="date">2019-01-03 12:30:20</span>
+          </div>
+          <span class="content">Welcome to Code States #codestates</span>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  <script src="script.js"></script>
+  </div>
+</body>
+</html>
